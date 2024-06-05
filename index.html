@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique de Moda</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #555;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        section {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .producto {
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 250px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .producto:hover {
+            transform: translateY(-5px);
+        }
+        .producto img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .producto h2 {
+            margin-top: 10px;
+            color: #333;
+        }
+        .producto p {
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Boutique de Moda</h1>
+</header>
+
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#">Catálogo</a>
+    <a href="#">Contacto</a>
+</nav>
+
+<section>
+    <div class="producto">
+        <img src="https://via.placeholder.com/250" alt="Vestido elegante">
+        <h2>Vestido Elegante</h2>
+        <p>Precio: $250</p>
+        <button>Agregar al carrito</button>
+    </div>
+    <div class="producto">
+        <img src="https://via.placeholder.com/250" alt="Camisa a cuadros">
+        <h2>Camisa a Cuadros</h2>
+        <p>Precio: $80</p>
+        <button>Agregar al carrito</button>
+    </div>
+    <div class="producto">
+        <img src="https://via.placeholder.com/250" alt="Zapatos de moda">
+        <h2>Zapatos de Moda</h2>
+        <p>Precio: $120</p>
+        <button>Agregar al carrito</button>
+    </div>
+</section>
+</body>
+</html>
