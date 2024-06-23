@@ -3,95 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boutique de Moda</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #555;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        section {
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        .producto {
-            border: 2px solid #ccc;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 10px;
-            width: 250px;
-            background-color: #fff;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        .producto:hover {
-            transform: translateY(-5px);
-        }
-        .producto img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .producto h2 {
-            margin-top: 10px;
-            color: #333;
-        }
-        .producto p {
-            color: #777;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <meta name="google" content="notranslate" />
+
+    <title>ToDoService</title>
 </head>
 <body>
+    <header>
+        <h1>ECO-SERVICE</h1>
+    </header>
 
-<header>
-    <h1>Boutique de Moda</h1>
-</header>
+    <section class="container">
+        <form class="container-form">
+            <div class="container-div">
+                <input type="text" placeholder="Direccion" id="input-dir" >
+                <select name="" id="select-day" >
+                    <option value="" class="empy" disabled selected hidden>Dia</option>
+                    <option value="lunes">Lunes</option>
+                    <option value="martes">Martes</option>
+                    <option value="miercoles">Miercoles</option>
+                    <option value="jueves">Jueves</option>
+                    <option value="viernes">Viernes</option>
+                    <option value="sabado">Sabado</option>
+                </select>
+                <select name="" id="select-time">
+                    <option value="" class="empy" disabled selected hidden>Horario</option>
+                    <option value="08">08:00</option>
+                    <option value="09">09:00</option>
+                    <option value="10">10:00</option>
+                    <option value="11">11:00</option>
+                    <option value="12">12:00</option>
+                    <option value="13">13:00</option>
+                    <option value="14">14:00</option>
+                    <option value="15">15:00</option>
+                    <option value="16">16:00</option>
+                </select>
+                <select name="" id="select-electro">
+                    <option value="" class="empy" disabled selected hidden>Electrodomestico</option>
+                    <option value="lavarroopa">Lavarropas</option>
+                    <option value="heladera">Heladera</option>
+                    <option value="aire">Aire acondicionado</option>
+                </select>
+            </div>
+            <textarea placeholder="Obs:" cols="70" rows="15" id="observations"></textarea>
+            <button class="add-buttom">Agendar</button>
+        </form>
+    </section>
 
-<nav>
-    <a href="#">Inicio</a>
-    <a href="#">Catálogo</a>
-    <a href="#">Contacto</a>
-</nav>
+    <section class="cards">
+        <ul class="card-ul">
 
-<section>
-    <div class="producto">
-        <img src="https://via.placeholder.com/250" alt="Vestido elegante">
-        <h2>Vestido Elegante</h2>
-        <p>Precio: $250</p>
-        <button>Agregar al carrito</button>
-    </div>
-    <div class="producto">
-        <img src="https://via.placeholder.com/250" alt="Camisa a cuadros">
-        <h2>Camisa a Cuadros</h2>
-        <p>Precio: $80</p>
-        <button>Agregar al carrito</button>
-    </div>
-    <div class="producto">
-        <img src="https://via.placeholder.com/250" alt="Zapatos de moda">
-        <h2>Zapatos de Moda</h2>
-        <p>Precio: $120</p>
-        <button>Agregar al carrito</button>
-    </div>
-</section>
+        </ul>
+    </section>
+
+    <footer></footer>
+
+    <script src="evento.js"></script>
+
 </body>
 </html>

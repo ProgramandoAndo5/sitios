@@ -1,0 +1,55 @@
+:root{
+    --font:blue
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+select{
+    border-radius: 3px;
+}
+
+input, select{
+    height: 20%;
+}
+#input-dir{
+    border-radius: 3px;
+}
+#input-dir::placeholder{
+    color:black
+}
+.empy{
+    color: gray;
+}
+.container{
+    width: 100%;
+    margin-top: 5vh;
+
+}
+.container-form{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 20%;
+    height: 250px;
+}
+.add-buttom{
+    height: 50px;
+}
+.card-ul{
+    height: 100px;
+}
